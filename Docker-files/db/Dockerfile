@@ -4,6 +4,6 @@ LABEL "Author"="sohail"
 
 ENV MYSQL_ROOT_PASSWORD="vprodbpass"
 ENV MYSQL_DATABASE="accounts"
-EXPOSE 3306
-ADD db_backup.sql docker-entrypoint-initdb.d/.
-CMD ["mysqld"]
+
+ADD db_backup.sql docker-entrypoint-initdb.d/db_backup.sql
+
