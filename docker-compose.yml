@@ -4,6 +4,7 @@ services:
     build:
       context: ./Docker-files/db
     image: iamsohail/vprofiledb
+    restart: always
     container_name: vprodb
     ports:
       - "3306:3306"
