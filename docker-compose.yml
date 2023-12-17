@@ -36,6 +36,8 @@ services:
       - vproappdata:/usr/local/tomcat/webapps
     environment:
       - MYSQL_ROOT_PASSWORD=vprodbpass
+    depends_on:
+      - vprodb
   vproweb:
     build:
       context: ./Docker-files/web 
