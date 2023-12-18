@@ -3,7 +3,7 @@ services:
   vprodb:
     build:
       context: ./Docker-files/db
-    image: vprocontainers/vprofiledb
+    image: iamsohail/vprofiledb
     restart: always
     container_name: vprodb
     ports:
