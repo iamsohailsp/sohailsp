@@ -3,10 +3,9 @@ services:
   vprodb:
     build:
       context: ./Docker-files/db
-    image: iamsohail/vprofiledb
+    image: vprocontainers/vprofiledb
     restart: always
     container_name: vprodb
-    
     ports:
       - "3306:3306"
     volumes:
@@ -35,8 +34,6 @@ services:
       - "8080:8080"
     volumes:
       - vproappdata:/usr/local/tomcat/webapps
-    environment:
-      - MYSQL_ROOT_PASSWORD=vprodbpass
   vproweb:
     build:
       context: ./Docker-files/web 
