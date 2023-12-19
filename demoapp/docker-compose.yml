@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  noejs:
+    build:
+      context: .
+    image: iamsohail/nodejs
+    container_name: nodejs
+    ports:
+      - "3000:3000"
+    volumes:
+      - nodejs-volume:/usr/src/app
+volumes:
+  nodejs-volume: {}
