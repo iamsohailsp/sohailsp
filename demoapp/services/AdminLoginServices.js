@@ -13,9 +13,6 @@ class AdminLoginService{
         } catch (error) {
             return error;
         }
-       } catch (error) {
-        return error;
-       }
     }
 }
 module.exports=new AdminLoginService();
