@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon index.js"
+    "eslint": "eslint . --format json --output-file eslint-report.json"
   },
   "author": "",
   "license": "ISC",
