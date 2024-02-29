@@ -8,9 +8,4 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            echo "this is ${pathan}"
-        }
-    }
 }
